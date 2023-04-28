@@ -17,7 +17,7 @@ function calculateTip(event){
     }
 
     let total = (bill * serviceQuality) / numOfPeople;
-    let totalValue = +bill + +total;
+    let totalValue = (bill / numOfPeople) + +total;
     total = total.toFixed(2);
     totalValue = totalValue.toFixed(2);
     document.getElementById('tip').innerHTML = total;
